@@ -37,28 +37,38 @@ border-bottom: 5px solid transparent;
 border-left: 5px solid #2f2f2f;
 }
 
-h2{
+/*大标题*/
+t1{
+color:#B8BBDE;
+font-size:48px
 }
-
+/*小标题*/
 t2{
-font-size:18px;
+font-size:32px;
 box-shadow:0px -100px hsla(218,88%,76%,40%) inset;
 border-radius:10px
 }
-n2{
-color:#C3BED4
+/*强调*/
+t3{
+color:#FA8072
 }
-t1{
-color:#B8BBDE;
-font-size:24px
+/*重点*/
+l1{
+box-shadow:0px -100px #FCECA3 inset;
+border-radius:10px
 }
 n1{
 color:#D7B29E
 }
-t3{
-color:#FA8072
+/*补充*/
+n2{
+color:#C3BED4
 }
-
+/*no*/
+l{
+box-shadow:0px -100px #BFEAEF inset;
+border-radius:10px
+}
 
 
 
@@ -89,13 +99,7 @@ margin-left:1.5cm;
 h1{
 font-size:45px;
 }
-l2{
-box-shadow:0px -100px #FCECA3 inset;
-border-radius:10px
-}
-l{
-box-shadow:0px -100px #BFEAEF inset;
-border-radius:10px
+h2{
 }
 i1{
 box-shadow:0px -100px hsla(254,20%,60%,30%) inset;
@@ -148,13 +152,20 @@ border-radius:10px
 
 
 
-<*p><*t1>节</t1></p>
-<*p><*t2>知识点</t2></p>
-<&p><&t3>分项</t3></p>
-<*b>重点（writer）</b>
-<*l2>荧光（reader）</l2>
-<*n1>笔记/便签（note）/荧光搭档</n1>
-<*n2>补充</n2> or <*i>非正文</i>
+<*p><*t1>节<*/t1><*/p>
+<br>
+<*p><*t2>知识点<*/t2><*/p>
+<br>
+<*p><*t3>分项<*/t3><*/p>
+<br>
+<*b>重点（writer）<*/b>
+<br>
+<*l1>荧光（reader）<*/l1>
+<br>
+<*n1>笔记/便签（note）/荧光搭档<*/n1>
+<br>
+<*n2>补充<*/n2> or <*i>非正文<*/i>
+<br>
 
 
 
@@ -217,7 +228,7 @@ border-radius:10px
 <br>
 hzdhezbzezezg
 <br>
-<l2>第一节内容</l2>
+<l1>第一节内容</l1>
 <br>
 <br>
 <n1>Xxxxxxxxx</n1>
