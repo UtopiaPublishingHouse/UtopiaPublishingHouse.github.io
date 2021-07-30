@@ -40,6 +40,22 @@ font-family:arial;
 margin: 1rem 1.5rem 1rem 1.5rem;
 font-size:16px;
 }
+
+a {
+text-decoration: none;
+color: black
+}
+a: link { color: ; } 
+a: visited{}
+a: hover { color:; } 
+p{
+word-spacing:24px
+}
+#p1{
+margin-left:1.5cm;
+}
+
+
 .header{
 width:100%;
 background-color:#FFFACD;
@@ -92,6 +108,10 @@ font-size: 4em;
 text-align:center;
 line-height:100px;
 text-decoration:none;
+-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
 z-index:1;
 }
 
@@ -126,29 +146,13 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 }
-li a.active {
-background-image:url("https://z3.ax1x.com/2021/07/14/WZf4PJ.jpg");
-color: white;
-}
 
-li a:hover:not(.active) {
-  background-image:url("https://z3.ax1x.com/2021/07/14/WZf4PJ.jpg");
-  color: black;
-
-
-
-
-
-* {
-margin: 0;
-padding: 0;
-}
 #parent >li> span{
 background: #ededf3;
 display: block;
 width: 100% ;text-align:center; padding: 4px;border:1px solid #ECEEF2;}
 li {line-height: 40px;display: block;}
-li  p{
+li p{
 display: inline-block;
 width: 0px;
 height: 0px;
@@ -207,43 +211,8 @@ border-radius:10px
 }
 
 
-.page_center {
-	width:100%;
-}
-#nav {
-	background-color:#ededf3;
-	height:20px;
-}
-#left { 
- width:450px; /*设定宽度*/
- text-align:left; /*文字左对齐*/
- float:left; /*浮动居左*/
- clear:left; /*不允许左侧存在浮动*/
- overflow:hidden; /*超出宽度部分隐藏*/
-background-color:#f6f6f6;
-}
-#right{
-    width: 450px;
-    text-align: left;
-    float: right; /*浮动居右*/
-    clear: right; /*不允许右侧存在浮动*/
-    overflow: hidden;
-    background-color:#f6f6f6;
-}  
 
 
-a {
-text-decoration: none;
-color: black
-}
-.link { color: #FF0000; } 
-.link:hover { color: purple; } 
-p{
-word-spacing:24px
-}
-#p1{
-margin-left:1.5cm;
-}
 
 i1{
 box-shadow:0px -100px hsla(254,20%,60%,30%) inset;
@@ -598,9 +567,7 @@ XXXXXXXXXXXXXXXXXXXXXXXX
  
  
 
-<div id="nav" class="page_center">目录</div>
-<div class="page_center">
-<div id="left">
+<div id="nav">目录</div>
 <a href="#id-1">Summer Vacation Plan</a>
             <br />
         <a href="#id-2">网站安利</a>
@@ -609,8 +576,6 @@ XXXXXXXXXXXXXXXXXXXXXXXX
             <br />
         <a href="#id-4">English(备忘录/wiki/G_c/G_u/B站)M</a>
             <br />
-</div>
-<div id="right">        
 <a href="https://restrechinamynd.github.io/">math(deep>G_R)
 </a>
             <br />
@@ -622,7 +587,6 @@ XXXXXXXXXXXXXXXXXXXXXXXX
             <br />
         <a href="#id-"></a>
             <br />
-</div>
 </div>
 <br /><br /><br />
 
