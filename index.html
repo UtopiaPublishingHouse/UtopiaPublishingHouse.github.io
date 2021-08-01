@@ -42,7 +42,6 @@
 body{
 font-family:arial;
 font-size:16px;
-font-size:100%;
 position: relative;
 }
 
@@ -59,7 +58,9 @@ word-spacing:24px
 #p1{
 margin-left:1.5cm;
 }
-
+p{
+font-size:200%;
+}
 
 .header{
 width:100%;
@@ -71,10 +72,9 @@ left: 0px;
 .be-all img{
 width:100%;
 opacity:0.7;
-object-fit:cover;
+object-fit:contain;
 position:absolute;
 margin-top:0%;
-z-index:-1;
 }  
 
 .be-all{
@@ -90,7 +90,6 @@ line-height:5rem;
 }
 .end-all{
 }
-/* main的padding-bottom值要等于或大于footer的height值 */
 .footer{
 width:100%;
 left: 0px;
@@ -105,7 +104,6 @@ opacity:0.5;
 width:100%;
 object-fit:contain;
 position:absolute;
-z-index:-1
 }
 a.menuLink {
 width: 100px; 
