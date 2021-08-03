@@ -76,14 +76,20 @@ background-color:black;
 
 /*tags*/
 tagbox{
-font-size:100%;
 display:block;
 display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+tag{
+font-size:200%;
 
+display:block;
+margin:1rem;
+padding:0.5rem 1rem;
+border-radius: 50px;
+}
 tagpage{display:none;}
 tag:hover tagpage{
 position:fixed;
@@ -98,12 +104,6 @@ box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.3);
 padding:2rem;
 z-index:5;
 border-radius: 25px;
-}
-tag{
-display:block;
-margin:1rem;
-padding:0.5rem 1rem;
-border-radius: 50px;
 }
 /*对话*/
 .keywords{
