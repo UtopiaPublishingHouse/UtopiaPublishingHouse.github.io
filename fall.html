@@ -4,6 +4,9 @@
 <meta name="keywords" content="艺术,阅读,游戏,学习,电影,写作,神秘,传闻,其他">
 
 <style>
+#menu{
+transform:translate(-20px,20px);
+}
 * {
     margin: 0;
     padding: 0;
@@ -90,11 +93,11 @@ li {
 }
 #menuContent {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+  height: 100%;
     display: none;
     text-align: center;
-    z-index: 3;
+    z-index: 2;
     opacity: 0.95;
 }
 #menuContent ul,
@@ -111,6 +114,7 @@ li {
     justify-content: center;
     text-decoration: none;
     transition: .2s ease-in-out;
+
 }
 #menuContent a:hover {
     opacity: 0.8;
@@ -190,11 +194,13 @@ li {
 }
 
 
-
-
+a{
+text-decoration:none;
+}
 page{
 display:none;
 }
+
 
 .content{
 font-size: 1.5rem;
@@ -505,7 +511,7 @@ height:100%;
 left:0;
 position:absolute;
 opacity:1.0;
-width:100vw;
+width:100%;
 height:100vh;
 margin-top:-12%;
 object-fit:contain;
@@ -633,7 +639,7 @@ top:0%;
 left:0;
 position:fixed;
 margin:0;
-height:8%;
+height:80%;
 width:100%;
 overflow: auto; 
 -webkit-box-shadow: 0 0 0 12000px rgba(0, 0, 0, 0.3);
@@ -683,11 +689,11 @@ z-index:6
     <button id="button">⟷</button>
 </div>
 
-<div id="menuContent">
-    <ul>
+<div id="menuContent" >
+    <ul style="box-shadow:0 0 1000px  0 #16a085 !important;">
         <li><a rel="nofollow" rel="noreferrer" href=".section1">彩绘井盖／rabbit hole</a>
         </li>
-        <li><a rel="nofollow" rel="noreferrer" href=".section2">城下水道／underground</a>
+        <li><a rel="nofollow" rel="noreferrer" href=".section2">城下水道／underground gallery</a>
         </li>
         <li><a rel="nofollow" rel="noreferrer" href=".section3">完美世界／wonderland</a>
         </li>
@@ -836,12 +842,12 @@ z-index:6
   
 
 
-
-
-<button class="free-button_map custom-btn btn-7" style="margin:2rem 35% 3rem 35%;zoom:2;font-size:0.8rem;z-index:5">
+<button class="free-button_map custom-btn btn-7" style="margin:2rem 35% 3rem 35%;zoom:2;font-size:0.8rem;z-index:;">
 <span>Let's go!</span>
 
  
+
+
 <div class="map">
 <img src="https://z3.ax1x.com/2021/08/03/fFuE4A.png" style="position:absolute;top:0px;left:0px; height:auto;width:auto;z-index:0;">
 
