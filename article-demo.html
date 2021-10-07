@@ -3,6 +3,10 @@
 <title></title>
 <script src="https://restrechinamynd.github.io/child-animation.js"></script>    
 <link href="https://restrechinamynd.github.io/timelapse.css" rel="stylesheet">
+<link rel="stylesheet" href="https://Restrechinamynd.github.io/page.css" type="text/css"> 
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
 </head>
 <body>
 <div id="down" class="appear1" style="background:url('');"></div>
@@ -11,6 +15,11 @@
 <article id="article">
 {正文}
 </article>
+
+
+<main id="main">
+正文
+</main>
 
 
 
@@ -33,6 +42,109 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
 <script src="https://restrechinamynd.github.io/timemark.js"></script>    
+
+
+
+<div class="bottom-nav">
+
+
+<i id="keyword-button" onclick="keyword()" class="fa fa-filter" aria-hidden="true"><dfn style="color:black" id="keyword-dfn">   搜索<note>关键词查询</note></dfn>
+<div id="keyword-nav">
+<div onclick="keyword1()">关键词选择</div>
+<div onclick="keyword2()">自定义</div>
+</div>
+</i>
+
+
+<i id="editor-button" class="fa fa-magic" aria-hidden="true" style="">  编辑
+<div class="editmenu">
+<a href="https://restrechinamynd.github.io/VisualEditor">可视化编辑器  »</a>
+<a href="https://restrechinamynd.github.io/LMLEditor">timemark  »</a>
+</div>
+</i> 
+</div>
+
+
+<fbb id="searched-button" style="height:5rem;padding:0rem 3rem">完成
+</fbb>
+<div id="keyword-ul">
+<button id="k1" onclick="key1()">1</button>
+<button id="k2" onclick="key2()">2</button>
+<button id="k3" onclick="key3()">3</button>
+
+<button id="k4" onclick="key4()">1</button>
+<button id="k5" onclick="key5()">2</button>
+<button id="k6" onclick="key6()">3</button>
+
+<button id="k7" onclick="key7()">1</button>
+<button id="k8" onclick="key8()">2</button>
+<button id="k9" onclick="key9()">3</button>
+
+<button id="k10" onclick="key10()">1</button>
+<button id="k11" onclick="key11()">2</button>
+<button id="k12" onclick="key12()">3</button>
+</div>
+
+
+
+
+
+<script>
+function keyword1() {
+document.getElementById("keyword-ul").style.display="block";
+};
+
+function keyword2() {
+var C = prompt("输入关键词","");
+        if(C!=null&&C!=''){
+document.getElementById("searched-button").style.display="block";
+var str = document.getElementById("main").innerHTML;
+var D = "<k>" + C + "</k>";
+document.getElementById("main").innerHTML= str.replace(new RegExp(C , "g"), D);
+
+document.getElementById("searched-button").addEventListener('click',function searched() {
+document.getElementById("main").innerHTML= str.replace(new RegExp(D , "g"), C);
+document.getElementById("searched-button").style.display="none";
+})
+}
+}
+
+
+</script>
+
+
+<script>
+var main = document.getElementById("main");
+var str = main.innerHTML;
+function key1() {
+var D = "<k>我</k>";
+main.innerHTML= str.replace(new RegExp("我", "g"), D);
+document.getElementById("searched-button").style.display="block";
+document.getElementById("searched-button").addEventListener('click',function f1() {
+main.innerHTML= str.replace(new RegExp(D, "g"), "我");
+document.getElementById("searched-button").style.display="none";
+document.getElementById("keyword-ul").style.display="none";})
+};
+
+function key2() {
+main.innerHTML= str.replace(new RegExp("内", "g"), "2");
+document.getElementById("searched-button").style.display="block";
+document.getElementById("searched-button").addEventListener('click',function f2() {
+main.innerHTML= str.replace(new RegExp("2" , "g"), "内");
+document.getElementById("searched-button").style.display="none";})
+};
+
+function key3() {
+main.innerHTML= str.replace(new RegExp("容", "g"), "3");
+document.getElementById("searched-button").style.display="block";
+
+document.getElementById("searched-button").addEventListener('click',function f3() {
+main.innerHTML= str.replace(new RegExp("3" , "g"), "容");
+document.getElementById("searched-button").style.display="none";})
+}
+</script>
 </html>
+
+
 
 
