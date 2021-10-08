@@ -3,10 +3,8 @@
 <title></title>
 <script src="https://restrechinamynd.github.io/child-animation.js"></script>    
 <link href="https://restrechinamynd.github.io/timelapse.css" rel="stylesheet">
-<link rel="stylesheet" href="https://Restrechinamynd.github.io/page.css" type="text/css"> 
+<link rel="stylesheet" href="https://restrechinamynd.github.io/page.css" type="text/css"> 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-
 </head>
 <body>
 <div id="down" class="appear1" style="background:url('');"></div>
@@ -17,15 +15,10 @@
 </article>
 
 
-<main id="main">
-正文
-</main>
-
 
 
 <div class="tool_nav">
-<a id="comment" href="http://techypedia.wikidot.com/forum/t-14164506/start#post-5089660">讨论
-</a>
+<a id="comment" href="http://techypedia.wikidot.com/forum/t-14164506/start#post-5089660"> 讨论</a>
 <fork-request style="width:12rem;">引用申请 
 <fork-require>
 <dfn>Author: </dfn><br>
@@ -33,22 +26,19 @@
 <dfn>Copyright Notice: </dfn>All articles here are licensed under <dfn> CC BY <note>只要保留原作者姓名，就可以基于商业目的传播、改编或者二次创作。</note> </dfn> unless stating additionally.
 <div id="copy-allow" class="button" onclick="copy_allow()">我已了解</div>
 <input id="copy-button" type="button" class="button" onclick="copy()" value="复制"></input>
-<textarea id="copy-area">{}</textarea>
+<textarea id="copy-area"></textarea>
 </fork-require>
 </fork-request>
 <div id="copy-finish">已复制</div>
 </div>
 </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
-<script src="https://restrechinamynd.github.io/timemark.js"></script>    
 
 
 
 <div class="bottom-nav">
 
 
-<i id="keyword-button" onclick="keyword()" class="fa fa-filter" aria-hidden="true"><dfn style="color:black" id="keyword-dfn">   搜索<note>关键词查询</note></dfn>
+<i id="keyword-button" onclick="keyword()" class="fa fa-filter" aria-hidden="true"><dfn style="color:black !important" id="keyword-dfn">   搜索<note>关键词查询</note></dfn>
 <div id="keyword-nav">
 <div onclick="keyword1()">关键词选择</div>
 <div onclick="keyword2()">自定义</div>
@@ -85,66 +75,9 @@
 <button id="k12" onclick="key12()">3</button>
 </div>
 
-
-
-
-
-<script>
-function keyword1() {
-document.getElementById("keyword-ul").style.display="block";
-};
-
-function keyword2() {
-var C = prompt("输入关键词","");
-        if(C!=null&&C!=''){
-document.getElementById("searched-button").style.display="block";
-var str = document.getElementById("main").innerHTML;
-var D = "<k>" + C + "</k>";
-document.getElementById("main").innerHTML= str.replace(new RegExp(C , "g"), D);
-
-document.getElementById("searched-button").addEventListener('click',function searched() {
-document.getElementById("main").innerHTML= str.replace(new RegExp(D , "g"), C);
-document.getElementById("searched-button").style.display="none";
-})
-}
-}
-
-
-</script>
-
-
-<script>
-var main = document.getElementById("main");
-var str = main.innerHTML;
-function key1() {
-var D = "<k>我</k>";
-main.innerHTML= str.replace(new RegExp("我", "g"), D);
-document.getElementById("searched-button").style.display="block";
-document.getElementById("searched-button").addEventListener('click',function f1() {
-main.innerHTML= str.replace(new RegExp(D, "g"), "我");
-document.getElementById("searched-button").style.display="none";
-document.getElementById("keyword-ul").style.display="none";})
-};
-
-function key2() {
-main.innerHTML= str.replace(new RegExp("内", "g"), "2");
-document.getElementById("searched-button").style.display="block";
-document.getElementById("searched-button").addEventListener('click',function f2() {
-main.innerHTML= str.replace(new RegExp("2" , "g"), "内");
-document.getElementById("searched-button").style.display="none";})
-};
-
-function key3() {
-main.innerHTML= str.replace(new RegExp("容", "g"), "3");
-document.getElementById("searched-button").style.display="block";
-
-document.getElementById("searched-button").addEventListener('click',function f3() {
-main.innerHTML= str.replace(new RegExp("3" , "g"), "容");
-document.getElementById("searched-button").style.display="none";})
-}
-</script>
+</body>
 </html>
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
+<script src="https://restrechinamynd.github.io/timemark.js"></script>    
+<script src="https://restrechinamynd.github.io/k.js"></script>    
 
