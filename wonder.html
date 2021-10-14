@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html>
-<title>wonder</title>
 
 <head>
-<meta name="description" content="">
-<meta name="keywords" content="Chinese">
-<Link href="" rel="Shortcut Icon">
-<script src="https://restrechinamynd.github.io/child-animation.js"></script>    
-<link rel="stylesheet" href="https://Restrechinamynd.github.io/all.css" type="text/css"> 
+<title>wonder</title>
 
-<link href="https://restrechinamynd.github.io/timelapse.css" rel="stylesheet">
-<link rel="stylesheet" href="https://restrechinamynd.github.io/page.css" type="text/css"> 
+<meta name="description" content="">
+<meta name="keywords" content="wonder">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://restrechinamynd.github.io/page.css" type="text/css"> 
+<link rel="stylesheet" href="https://Restrechinamynd.github.io/all.css" type="text/css"> 
+<link href="https://restrechinamynd.github.io/timelapse.css" rel="stylesheet">
+
 <style type="text/css">
-body{
-background:rgb(254, 255, 253);
-padding:4rem;
-width:100%;
+html{
+background:rgb(10,42,101);
 }
+body{
+background:url('https://z3.ax1x.com/2021/10/13/5uLVFP.jpg') rgb(252, 252, 252) center bottom no-repeat;
+height:93vh;
+font-size:2.4rem;
+font-weight:380;
+padding:0;
+margin:0;
+color:#333;
+display:flex;
+width:100%;
+flex-direction: column;
+}
+
 main{
 font-size:3rem !important;
+padding:4rem;
+background-color:rgba(254, 255, 23,0.0);
+margin-top:-80vh;
+left:0;
 }
-button{
+.tool_nav button{
+color:black;
 display:block;
-font-size:2.4rem;
+font-size:2.7rem;
+font-weight:350;
 width:20rem;
 height:6rem;
 padding:1rem 3rem;
 height:6rem;
 padding:1rem 3rem;
-margin:2rem 32px;
+margin:0rem 32px;
 line-height:3.5rem;
 text-align:center;
 transition-duration:0.4s;
 background:#f5f5f5;
-color:white !important;
 text-decoration:none;
 border:none;
 border-radius: 20px;
+box-shadow: 6px 6px 8px 0 rgba(100,140,165,0.3);
+
 }
 
 button:hover{
-background-color:rgba(1,102,255,100%);
+background-color:#4CAF50;
 border:none;
 color: white;
 }
@@ -51,32 +69,134 @@ color: white !important;
 button.g{	 
 }
 button.g:hover{
-background-color:#4CAF50;
+background-color:rgba(1,102,255,100%);
 color: white;
-bac
 }
+button.r:hover{
+background-color:tomato;
+color: white;
+}
+.tool_nav{
+margin:5rem 0;
+}
+
+
+
+header{
+padding-top:0rem;
+height:;
+z-index:1
+}
+#ssl{
+position:fixed;
+left:0;
+right:0;
+top:0;
+padding-left: 8%;
+padding-right: 5%;
+padding-top:2rem;
+width:100%;
+padding-bottom:0rem;
+font-family:Arial,Georgia,'Century Gothic';
+font-size:3.2rem;
+color:#333;
+background-color:rgba(1,102,255,10%);
+box-shadow: 0px 0 24px rgba(0, 0, 0, 0.35);
+}
+#search-input{
+width:70% !important;
+padding:1rem 1.5rem;
+border:none;
+font-family:Arial,Georgia,'Century Gothic';
+font-size:2.7rem !important;
+display:inline;
+font-weight:300;
+cursor-color:white;
+background-color:white;
+box-shadow: 6px 6px 8px 0 rgba(100,140,165,0.3);
+}
+#ssl textarea{
+color:black;
+}
+#ssl textarea:hover{
+background:white;
+box-shadow: 0px 15px 30px 0 rgba(0, 0, 0, 0.2);
+}
+#ssl span{
+display:inline-block;
+margin-bottom:7rem;
+font-size:2.5rem;
+color:rgba(118,120,102,0%);
+padding:0;
+}
+#ssl .Fa-search{
+color:rgba(30,10,50,90%);
+}
+#ssl span:hover{
+color:rgba(30,28,60,80%);
+}
+#ssl span:hover .Fa-search{
+color:#eee !important
+}
+footer{
+color:white;
+font-size:2rem;
+line-height:3.5rem;
+background:rgb(10,42,101);
+text-align:center;
+padding:5rem 0;
+margin:-36% 0;
+width:100%;
+position:absolute;
+bottom:0;
+}
+
 </style>
 </head>
 
 <body>
+
+
+
+<header id="header">
+<div class="" id="ssl">
+<span class="fa-stack fa-lg" id="search-button" onclick="a1()" style="">
+<i class="fa Fa-circle  fa-stack-2x" aria-hidden="true">●</i>
+<i class="fa Fa-search  fa-stack-1x" aria-hidden="true">Q</i> 
+</span>
+<textarea placeholder="Have something to search for?" id="search-input" rows="1">
+</textarea>
+</div>
+</header>
+
+
+
+<script>
+function a1(){          
+var x = document.getElementById("search-input").value;
+window.location.href = "#"+x;
+}
+</script>
+
 <main>
-<div class="tool_nav">
-<button></button>
-<button></button>
 
-<button class="g"></button>
+
+<div style="background:white;border-radius:80px;position:absolute;left:0;right:0;top:0%;padding-top:40%;height:45%;box-shadow: 0 10px 10px 0 rgba(100,140,165,0.3);z-index:;">
+
+<div class="tool_nav">
+<button>Chinese</button>
+<button>Math</button>
+<button>English</button>
 </div>
 
 <div class="tool_nav">
-<button></button>
-<button></button>
-<button></button>
+<button>physics</button>
+<button>chemistry</button>
+<button>biology</button>
 </div>
 
 
-
-
-
+</div>
 
 
 
@@ -86,5 +206,19 @@ bac
 
 
 </main>
+
+<footer>
+Copyright &copy; <span id="nowyear"></span> 版权归原作者所有
+<hr>
+Posted by: Utopia Publishing House<br>
+email: UtopiaPublishingHouse@outlook.com
+</footer>
+
+<script type="text/javascript">  
+        var t=new Date();  
+        var y=t.getFullYear();
+document.getElementById("nowyear").innerHTML = y;
+</script>
+
 </body>
 </html>
