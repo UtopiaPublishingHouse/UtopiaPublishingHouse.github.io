@@ -821,6 +821,12 @@ function(){document.querySelector("body").style.backgroundColor="white";setTimeo
 </div></div>
 
 <script>
+
+document.body.oncontextmenu=function(){
+return false};
+
+
+
 function bbb1(){
 document.querySelector(".container").style.display="none"};
 document.querySelector("#fire-btn").addEventListener("click",
