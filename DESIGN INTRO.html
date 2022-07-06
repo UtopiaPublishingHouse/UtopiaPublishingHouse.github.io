@@ -2,7 +2,11 @@
 <head>
 <title>笔记体系介绍</title>
 <script src="https://restrechinamynd.github.io/child-animation.js"></script>    
+<link href="https://restrechinamynd.github.io/child.css" rel="stylesheet">
 <link href="https://restrechinamynd.github.io/timelapse.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
+
+
 </head>
 <body>
 <div id="down" class="appear1"></div>
@@ -17,8 +21,6 @@
 </article>
 示例
 <article id="article">
-
-
 - 标题
 # 一级标题 
 ## 二级标题
@@ -28,11 +30,7 @@
 
 - **特殊**
 
-（特殊）
-
 「插入」｛插入内容，选填。｝
-
-“强调”
 
 
 - 链接
@@ -77,34 +75,23 @@ https://restrechinamynd.github.io/all.css
 「插入」｛插入内容，选填。｝
 </blockquote>
 
-“
-- https://restrechinamynd.github.io/timepalse
-- https://restrechinamynd.github.io/new
+<blockquote>
+- https://restrechinamynd.github.io/timepalse<br>
+- https://restrechinamynd.github.io/new<br>
 - https://restrechinamynd.github.io/all.cs
-”
+</blockquote>
 
 
-
-
-<div class="tool_nav">
-<a id="comment" href="http://techypedia.wikidot.com/forum/t-14164506/start#post-5089660">讨论
-</a>
-<fork-request style="width:12rem;">引用申请 
-<fork-require>
-<dfn>Author: </dfn><br>
-<dfn>Link:</dfn><br>
-<dfn>Copyright Notice: </dfn>All articles here are licensed under <dfn> CC BY <note>只要保留原作者姓名，就可以基于商业目的传播、改编或者二次创作。</note> </dfn> unless stating additionally.
-<div id="copy-allow" class="button" onclick="copy_allow()">我已了解</div>
-<input id="copy-button" type="button" class="button" onclick="copy()" value="复制"></input>
-<textarea id="copy-area">https://blog.csdn.net/yuzsmc</textarea>
-</fork-require>
-</fork-request>
-<div id="copy-finish">已复制</div>
-</div>
 </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>    
-<script src="https://restrechinamynd.github.io/timemark.js"></script>    
+
+ <script>
+var t = document.getElementById("article").innerHTML;
+document.getElementById("article").innerHTML=marked.parse(t);
+ </script>
+
+<script src="https://restrechinamynd.github.io/page.js"></script>    
+
 </html>
 
 
