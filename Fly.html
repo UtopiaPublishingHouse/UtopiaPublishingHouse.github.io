@@ -23,7 +23,6 @@ object-fit:cover;
 margin:0;
 z-index:-1;
 }  
-
 .footer{
 color:white;
 font-size:2rem;
@@ -32,33 +31,12 @@ padding:5rem;
 text-align:center;
 margin:0 auto;
 }
-
 .spec_clr{
 color:rgb(128,150,191)
 }
-
 #down:hover{
 box-shadow:0px 0px 130px 20px rgba(240, 240, 240, 0.7) !important
 }
-a.menuLink {
-width: 100px; 
-height: 100px; 
-border-radius: 50%;
-border:#be002f 4px solid;
-background-color: #fff;
-position: fixed;
-right:5rem;
-bottom:10rem;
-color: #be002f;
-font-size: 4em;
-text-align:center;
-line-height:100px;
-text-decoration:none;
-box-shadow: 0 0 30px #111;
-z-index:3;
-}
-
-
 ul{
 list-style-type: none;
 overflow: auto; 
@@ -75,13 +53,18 @@ background:url("https://z3.ax1x.com/2021/07/30/WXeeKK.jpg") no-repeat  center ce
 padding:4rem 1rem;
 overflow: auto; 
 right:60%;
-display: none;
+display: block;
 top:0px;
 height:100%;
 width: 40%;
 position: fixed;
 z-index: 3;
 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+animation:slowshow 1s;
+}
+#menu:hover{
+width:0;
+animation:slowhidden 1s;
 }
 li a {
 background:transparent;
@@ -92,7 +75,14 @@ padding: 1rem 2rem;
 text-decoration: none;
 color: black
 }
-
+@keyframes slowshow{
+from{width:0;}
+to{width:40%;}
+}
+@keyframes slowhidden{
+from{width:40%;}
+to{width:0;}
+}
 
 </style>
 
@@ -131,37 +121,36 @@ color: black
 
 <body>
 
-     
+    
 
-
-<a href="menu.html" class="menuLink">+</a>
+<a style="left:100%;width:120%;height:50vh;top:50vh;position:fixed;">
 <ul id="menu">
 <ul> 
 <li><a href="https://UtopiaPublishingHouse.github.io/DOORS">DOORS</a>
 </li>
-<li><a href="https://UtopiaPublishingHouse.github.io/fall">rooftop</a>
+</ul>
+
+<ul>  
 </li>
 <li><a href="https://restrechinamynd.github.io/room">room</a>
 </li>
-<li><a href="https://restrechinamynd.github.io/library">library</a>
+<li><a href="https://UtopiaPublishingHouse.github.io/library">library</a>
 </li>
 <li><a href="https://restrechinamynd.github.io/library studio">library studio</a>
 </li>
+</ul>
+
+<ul>
 <li><a href="https://restrechinamynd.github.io/Cloud Savour">Cloud Savour</a>
 </li>
 <li><a href="https://restrechinamynd.github.io/"></a>
 </li>
-
-Dream 1：风起
-</ul>
-
-<ul>  
 </ul>
 
 
 </ul>
  
-
+</a>
 
 
 
@@ -169,7 +158,7 @@ Dream 1：风起
 <img src="https://z3.ax1x.com/2021/07/19/WYp3eU.jpg">
 
 
-<a href="#main" style="display:block;position:absolute;width:100%;height:10rem;bottom:7%;font-size:3.8rem;font-weight:600;text-align:center;color:rgba(240, 240, 240, 0.9);text-decoration:none;"><div id="down" style="box-shadow:0px 0px 100px rgba(255, 255, 255, 0.4) inset;border-radius:50%;width:8rem;height:8rem;line-height:8.5rem;margin:auto">∨</div></a>
+<a href="#main" style="display:block;position:absolute;width:100%;height:10rem;bottom:7%;"><div id="down" style="box-shadow:0px 0px 100px rgba(255, 255, 255, 0.4) inset;border-radius:50%;width:8rem;height:8rem;margin:auto"></div></a>
 </div>
 
 
@@ -197,7 +186,7 @@ Dream 1：风起
 </div>
 
 
-<div class="footer">
+<div class="footer spec_clr">
 Copyright &copy; <span id="nowyear"></span> 版权归原作者所有
 <hr>
 Posted by: Utopia Publishing House<br>
